@@ -13,6 +13,6 @@ transformer.transform(data)
 transformer = preprocessing.RobustScaler().fit(data)
 transformer.transform(data)
 
-#return (max - value) / (max -min)
+#return (value - min) / (max -min)
 scaler = MinMaxScaler().fit(data)
 scaler.transform(data)
